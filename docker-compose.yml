@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  slack-archive:
+    build: .
+    working_dir: /data
+    environment:
+      SLACK_TOKEN: $SLACK_TOKEN
+    volumes:
+      - .:/data
+      - $HOME/.ssh/id_rsa:/home/root/.ssh/id_rsa:ro

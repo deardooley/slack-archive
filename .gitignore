@@ -1,0 +1,8 @@
+.DS_Store
+slackexport
+*.swp
+node_modules
+.idea
+cron.log
+.api-secret
+slack-history-export.log
